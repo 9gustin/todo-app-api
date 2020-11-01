@@ -1,6 +1,7 @@
 import express, { Request, Response } from 'express';
 import todoRoutes from '../routes/todo.routes';
 import bodyParser from 'body-parser';
+import cors from 'cors';
 
 class App {
     private instance:any;
@@ -9,8 +10,10 @@ class App {
     }
     start() {
         this.instance = express();
-        this.instance.use(bodyParser.json()); // for parsing application/json
-        this.instance.use(bodyParser.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
+
+        this.instance.use(bodyParser.urlencoded({ extended: true }));
+        this.instance.use(bodyParser.json());
+        this.instance.use(cors());
         this.setPort();
         this.setRoutes();
     }

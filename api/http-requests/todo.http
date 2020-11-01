@@ -1,2 +1,18 @@
-@API_URL = 'http://localhost:3000'
+@API_URL = http://localhost:3001
 
+### GETALL
+GET {{API_URL}}/todo
+Content-Type: 'application/json'
+
+### GETONE
+GET {{API_URL}}/todo/123
+Content-Type: 'application/json'
+
+### POST
+POST {{API_URL}}/todo
+Content-Type: 'application/json'
+
+{
+  name: "My first todo bien piola!",
+  completed: true
+}
