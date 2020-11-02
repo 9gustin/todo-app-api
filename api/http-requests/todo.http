@@ -5,14 +5,23 @@ GET {{API_URL}}/todo
 Content-Type: 'application/json'
 
 ### GETONE
-GET {{API_URL}}/todo/123
+GET {{API_URL}}/todo/5f9e3a5e2f1ad22a045ce114
 Content-Type: 'application/json'
 
 ### POST
 POST {{API_URL}}/todo
-Content-Type: 'application/json'
+Content-Type: "application/json"
 
 {
   name: "My first todo bien piola!",
   completed: true
+}
+
+### PUT
+PUT {{API_URL}}/todo
+Content-Type: 'application/json'
+{
+  _id: "5f9e3a5e2f1ad22a045ce114",
+  name: "TODO",
+  completed: false
 }
