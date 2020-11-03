@@ -1,0 +1,17 @@
+{
+  "name": "@9gustin/todo-api-sdk",
+  "version": "0.0.1",
+  "description": "",
+  "main": "lib/index.js",
+  "types":"lib",
+  "scripts": {
+    "build": "tsc -p ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^4.0.5"
+  }
+}
