@@ -1,0 +1,20 @@
+{
+  "name": "todo-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./backend"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/9gustin/todo-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/9gustin/todo-app/issues"
+  },
+  "homepage": "https://github.com/9gustin/todo-app#readme"
+}
